@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    background-color: #080808;
+    color: white;
+}
+#header{
+    height: 100vh;
+    width: 100%;
+    
+    background-image: url("file_0000000045f0720baab3ffef280c0f3f-removebg-preview.png");
+    
+    background-position:center;
+    background-repeat: no-repeat;
+    position: absolute;
+    
+    
+}
+.nav{
+    padding: 30px;
+    display: flex;
+justify-content: space-around;
+flex-wrap: wrap;}
+ul{
+    list-style: none;
+    display: flex;
+    gap: 60px;
+    color: white;
+}
+h1{
+font-weight: 300rem;
+}
+
+
+.Navlist ul li a{
+color:white;
+text-decoration: none;
+font-size: 30px;
+position: relative;
+
+
+}
+.Navlist ul li a::after{
+    content: '';
+    width: 0px;
+    height: 3px;
+    background-color: #ff004f;
+    position: absolute;
+    left: 0px;
+    bottom: -6px;
+      transition: 0.5s;
+
+}
+.Navlist ul li a:hover::after{
+    width: 100%;
+    content: '';
+    
+    height: 3px;
+    background-color: #ff004f;
+    position: absolute;
+    left: 0px;
+    bottom: -6px;
+  
+
+}
+.headertext{
+padding-left: 100px;
+padding-top: 300px;
+font-size: 20px;
+}
+.headertext h1{
+    font-size: 60px;
+
+}
+.headertext h1 span{
+    color: #ff004f;
+
+}
+#About{
+    padding-top: 1100px;
+    padding-left: 200px;
+    
+}
+.about-me-section{
+    padding-left: 50px;
+    position: relative;
+    bottom: 100px;
+    font-weight: 100px;
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.about-h1{
+    font-size: 60px;
+    font-weight: 600px;
+    color: #fff;
+}
+.tab{
+    display: flex;
+    gap: 30px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    color: #ababab;
+}
+
+.tab-1{
+    display: flex;
+    
+}
+.discription{
+    font-weight: 500;
+    font-size: 20px;
+}
+.tab-1{
+    font-size: 20px;
+     font-weight: 300;
+}
+.tab-2{
+    font-size: 20px;
+     font-weight: 300;
+}
+.tab-3{
+    font-size: 20px;
+     font-weight: 300;
+     
+}
+.tab p {
+    position: relative;
+}
+
+.tab p::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    left: 0;
+    bottom: -6px;
+    background-color: #ff004f;
+    position: absolute;
+    transition: 0.8s;
+}
+.tab-1.active-link:hover:after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    left: 0;
+    bottom: -6px;
+    background-color: #ff004f;
+    position: absolute;
+    transition: 0.8s;
+}
+
+
+
+
+.about-img{
+    border-radius: 10px;
+}
+
+

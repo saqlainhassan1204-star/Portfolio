@@ -1,0 +1,14 @@
+*{
+    margin: 0px;
+
+padding: 0px;
+}
+
+#box1{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    position: relative;
+    top: 30px;
+  left: 40px;
+}
