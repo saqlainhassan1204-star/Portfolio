@@ -80,100 +80,77 @@ font-size: 20px;
     color: #ff004f;
 
 }
-.container-about{
-    padding-top: 900px;
-    padding-left: 250px;
-    display: flex;
 
-    gap: 60px;
+
+#about{
+    padding-top: 1000px;
+    padding-left: 10px;
+    
+
 }
-.column-1 img{
+.row{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    
     border-radius: 15px;
+
 }
-.column-2 h1{
+.about-col-2{
+    
+    
+
+}
+.sub-title{
     font-weight: 600;
-    font-size: 50px;
+    font-size: 2rem;
+    color: white;
+
+
 }
-.column-2 p{
-    font-weight: 200;
-font-size: 20px;
-}
-.Content{
+.tab-titles{
     display: flex;
-    gap: 20px;
-    font-weight: 400px;
-    font-family: serif;
-    position: relative;
+    margin: 20px 0 40px;
+
 
 }
-
-.column-2 {
+.tab-links{
+    margin-right:50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
     position: relative;
 }
 
-.Skills::after {
-    content: '';
+.tab-links::after{
+    content:'';
     width: 0;
     height: 3px;
-    left: 0;
-    bottom: -6px;
-    position: absolute;
     background-color: #ff004f;
-    transition: 0.6s;
+    position:absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.10s;
+
 }
 
-.Skills:hover::after {
-    width: 5%;
+.tab-links.active-link::after{
+    width: 100%;
 }
-.Content-detail ul li{
+.tab-contents ul li{
     list-style: none;
-}
+    margin:10px 0;
 
-.Contentdetail ul li span{
+}
+.tab-contents ul li span{
     color: #ff004f;
-    font-size: 1rem;
-    font-weight: 600;
-    
+    font-size: 14px;
 }
-
-.Contentdetail ul li{
-    color:white;
-    font-size: 1.2rem;
-    font-weight: 300;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif';
-    
+.tab-contents{
+    display: none;
 }
-.Contentdetail2 ul li span{
-    color: #ff004f;
-    font-size: 1rem;
-    font-weight: 600;
-    
+.tab-contents.active-tab{
+    display: block;
 }
-
-.Contentdetail3 ul li span{
-    color: #ff004f;
-    font-size: 1rem;
-    font-weight: 600;
-    
-    
-}
-
-.Contentdetail2 ul li{
-    color:white;
-    font-size: 1.2rem;
-    font-weight: 300;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif';
-    
-}
-.Contentdetail3 ul li{
-    color:white;
-    font-size: 1.2rem;
-    font-weight: 300;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif';
-    
-}
-
-
-
-
-
