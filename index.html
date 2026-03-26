@@ -16,10 +16,10 @@
             <h1>Saqlain Hassan.</h1>
         </div>
 
-        <div class="Navlist">
+        <div class="Navlist active">
             <ul>
                 <li><a href="#header">Home</a></li>
-                <li><a href="#about">About</a></li>
+                <li><a onclick="Open(about)" href="#about">About</a></li>
                 <li><a href="#Service">Service</a></li>
                 <li><a href="#Portfolio">Portfolio</a></li>
                 <li><a href="#Contact">Contact</a></li>
@@ -33,7 +33,7 @@
     </div>
 </div>
 
-<div id="about">
+<div id="about" >
 
 <div class="container">
 
@@ -59,9 +59,38 @@
 
 <div class="tab-contents active-tab"  id="skills">
 <ul>
-    <li><span>UI/UX</span><br>Desigining Web</li>
+    <li><span>UI/UX</span><br></li>
 </ul>
-   <ul><li><span>Web Dev</span><Br>Web App devlopment </li></ul> 
+   <ul><li><span>Web Dev</span><Br></li></ul> 
+
+
+    <ul>
+    <li><span>HTML</span><br></li>
+</ul>
+
+<ul>
+    <li><span>CSS</span><br></li>
+</ul>
+
+<ul>
+    <li><span>Javascript</span><br></li>
+</ul>
+
+
+
+<ul>
+    <li><span>React</span><br></li>
+</ul>
+
+
+<ul>
+    <li><span>Inpage</span><br></li>
+</ul>
+
+
+<ul>
+    <li><span>Ms Office</span><br></li>
+</ul>
 
 </div>
 
@@ -131,7 +160,7 @@
 
 
     <h2 style="display: flex; padding-left: 15px;">Web development</h2>
-👉 I am create software, websites, or apps for clients instead of for yourself, and in return, <br>you get paid for your work. A client (such as a business owner or company) comes to you <br>with a need, like building a website or improving their online presence  <br>
+ <p style="font-weight: 600;">I am create software, websites, or apps for clients instead of for yourself, and in return you get paid for your work. A client (such as a business owner or company) comes to you <br>with a need, like building a website or improving their online presence </p <br>
   <a href="#learnmore">Learn more</a>
 </div>
 
@@ -140,9 +169,9 @@
     <i class="fa-solid fa-crop"></i>
 
     <h2 style= " display: flex; padding-left: 15px; ">UX/UI designing </h2>
-<p>👉 Designing and developing software, websites, and apps for clients based on their needs.</p>
-<p> You use your skills to create user-friendly, responsive, and professional digital solutions.</p>
-<p>After completing the project, you deliver the work and get paid for your service.</p>    <a href="#Learn more">Learn more</a>
+<p style="font-weight: 600;"> Designing and developing software, websites, and apps for clients based on their needs.I am  use my skills to create user-friendly, responsive, and professional digital solutions.After completing the project, I am deliver the work and get paid for your service</p>
+<p style="font-weight: 600;"> </p>
+<p style="font-weight: 600;">After completing the project, I am deliver the work and get paid for your service.</p>    <a href="#Learn more">Learn more</a>
 </div>
 
 
@@ -154,30 +183,76 @@
 
 <div id="Portfolio">
 <div class="container">
-    <h2 style="display: flex; padding-top: 100px;" class="sub-titile">Certification</h2>
+    <h2 style="display: flex; padding-top: 100px;" class="sub-titile">My Work</h2>
 
 <div class="work-list">
 
 <div class="work">
-    <img src="Screenshot 2026-03-25 170151.png" >
+    <img src="Screenshot 2026-03-25 170151.png" height="300px" width="300px" >
+    <div class="layer"><h3>Study Sync</h3></div>
 </div>
 
 <div class="work">
-    <img src="calculter.png" >
+    <img src="calculter.png"  height="300" width="300">
+        <div class="layer"><h3>Age Calculater</h3></div>
+
 </div>
 
 <div class="work">
-    <img src="expence calculater.png" >
-</div>
-</div>
+    <img src="expence calculater.png" height="" width="">
+        <div class="layer"><h3>Expence Calculter</h3></div>
 
 </div>
-
+</div>
 
 </div>
 
 
+</div>
+<div id="contact">
+    <div class="container">
+        <div class="row">
 
+            <!-- Left Section -->
+            <div class="contact-left">
+    <h3 class="sub-title">Contact Me</h3>
+
+    <div class="contact-info">
+        <p>
+            <i class="fa-solid fa-envelope"></i>
+            SaqlainHassan1204@gmail.com
+        </p>
+
+        <p>
+            <i class="fa-solid fa-phone"></i>
+            03400110778
+        </p>
+    </div>
+</div>
+
+              
+            </div>
+             
+
+            <!-- Right Section -->
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="name" placeholder="Enter Your Name" required>
+                    <input type="email" name="email" placeholder="Enter Your Email" required>
+                    <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+                 <div class="social-icon">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
 <script>
 
     let tablinks=document.getElementsByClassName("tablinks");
@@ -192,6 +267,39 @@
                 document.getElementById(tabname).classList.add("active-tab")
             }
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+let navLinks=
+
+navLinks.forEach(link => {
+    link.addEventListener("click", function() {
+
+        // remove active class from all
+        navLinks.forEach(l => l.classList.remove("active"));
+
+        // add to clicked one
+        this.classList.add("active");
+    });
+});
+
+
+let about=document.getElementById("about");
+function Open(Section){
+    console.log(about.innerText);
+
+
+}
 </script>
 
 </body>
